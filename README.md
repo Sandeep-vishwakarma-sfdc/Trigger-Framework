@@ -55,7 +55,7 @@ public without sharing class AccountTriggerHandler implements ITriggerHandler{
 
 ## Create One Trigger 
 Create one trigger on an object. Include every trigger event. Call the Trigger Dispatcher run() method. For example, a Account trigger would look like this:
-```java
+```apex
 trigger AccountTrigger on Account (before insert, before update, before delete, after insert, after update, after delete, after undelete) {
     TriggerDispatcher.run(new AccountTriggerHandler('AccountTrigger'));
 }
