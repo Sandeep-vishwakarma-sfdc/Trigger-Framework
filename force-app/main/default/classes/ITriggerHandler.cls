@@ -1,3 +1,10 @@
+/*******************************************************************************************
+* @Name         ITriggerHandler 
+* @Author       Sandeep Vishwakarma <sandeep.vishwakarma@skinternational.com>
+* @Date         20/06/2022
+* @Group        SKI
+* @Description  Common for all Triggers in organisation
+*******************************************************************************************/
 public interface ITriggerHandler {
 
     void beforeInsert(List<Sobject> newItems);

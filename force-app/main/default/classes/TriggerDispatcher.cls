@@ -1,5 +1,16 @@
+/*******************************************************************************************
+* @Name         TriggerDispatcher 
+* @Author       Sandeep Vishwakarma <sandeep.vishwakarma@skinternational.com>
+* @Date         20/06/2022
+* @Group        SKI
+* @Description  Common for all Triggers in organisation use to dispatch event
+*******************************************************************************************/
 public without sharing class TriggerDispatcher {
 
+    /*
+    * @Description  Identify event and call handler 
+    * @Param		TriggerHandler Interface 
+    */
     public static void run(ITriggerHandler handler){
         if(handler.isDisabled()){
             return;
